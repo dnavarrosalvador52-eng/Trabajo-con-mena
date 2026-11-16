@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memoria del Proceso | Lúmen Studios - Proyecto Lenguajes de Marcas</title>
+  <style>
+    /* Estilos para el documento imprimible a PDF */
+    @page {
+      size: A4;
+      margin: 20mm 18mm 20mm 18mm;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+      font-size: 11pt;
+      line-height: 1.5;
+      color: #222;
+      background-color: #fff;
+      margin: 0;
+      padding: 25px;
+    }
+    .portada {
+      page-break-after: always;
+      text-align: center;
+      padding-top: 60px;
+    }
+    .portada h1 {
+      font-size: 28pt;
+      color: #0f1015;
+      margin-bottom: 8px;
+      font-family: 'Georgia', serif;
+    }
+    .portada .subtitulo-portada {
+      font-size: 14pt;
+      color: #b8860b;
+      margin-bottom: 50px;
+      font-weight: 600;
+    }
+    .portada-logo {
+      width: 280px;
+      margin: 20px auto 40px auto;
+    }
+    .portada-cuadro {
+      display: inline-block;
+      text-align: left;
+      border: 2px solid #e5a93b;
+      border-radius: 8px;
+      padding: 20px 30px;
+      background-color: #fafafa;
+      margin-top: 40px;
+      width: 80%;
+      max-width: 500px;
+    }
+    .portada-cuadro p {
+      margin: 6px 0;
+      font-size: 11pt;
+    }
+    .salto-pagina {
+      page-break-after: always;
+    }
+    h2 {
+      color: #0f1015;
+      font-family: 'Georgia', serif;
+      font-size: 16pt;
+      border-bottom: 2px solid #e5a93b;
+      padding-bottom: 4px;
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+    h3 {
+      color: #1a1a24;
+      font-size: 12pt;
+      margin-top: 16px;
+      margin-bottom: 6px;
+    }
+    p {
+      margin: 0 0 10px 0;
+      text-align: justify;
+    }
+    ul, ol {
+      margin: 0 0 12px 20px;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+      font-size: 10pt;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 7px 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #0f1015;
+      color: #fff;
+      font-weight: 600;
+    }
+    tr:nth-child(even) td {
+      background-color: #f8fafc;
+    }
+    .caja-nota {
+      background-color: #f1f5f9;
+      border-left: 4px solid #e5a93b;
+      padding: 10px 15px;
+      margin: 14px 0;
+      font-size: 10pt;
+    }
+    .boton-imprimir {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background-color: #e5a93b;
+      color: #000;
+      border: none;
+      padding: 10px 18px;
+      font-size: 11pt;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .boton-imprimir:hover {
+      background-color: #ffd700;
+    }
+    @media print {
+      .boton-imprimir {
+        display: none;
+      }
+      body {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="boton-imprimir" onclick="window.print()">🖨️ Imprimir / Guardar como PDF</button>
+
+  <!-- PÁGINA 1: PORTADA -->
+  <section class="portada">
+    <img src="img/logo.svg" alt="Logotipo Lúmen Studios" class="portada-logo">
+    <h1>LÚMEN STUDIOS</h1>
+    <div class="subtitulo-portada">Memoria Técnica y Documento del Proceso</div>
+    <p><strong>Proyecto Final 1ª Evaluación — Entidad Ficticia</strong></p>
+    <p>Módulo: <em>Lenguajes de Marcas y Sistemas de Gestión de Información</em></p>
+    <p>Ciclos Formativos: DAM / DAW / ASIR</p>
+
+    <div class="portada-cuadro">
+      <p><strong>Tema Seleccionado:</strong> Una productora de cine independiente</p>
+      <p><strong>Entidad Ficticia:</strong> Lúmen Studios Cinematográficos S.L.</p>
+      <p><strong>Integrantes del Equipo (3 personas):</strong></p>
+      <ul>
+        <li><strong>Persona A:</strong> [Nombre del Alumno 1] — Coordinación, Inicio y CSS global</li>
+        <li><strong>Persona B:</strong> [Nombre del Alumno 2] — Páginas temáticas, tablas y listas</li>
+        <li><strong>Persona C:</strong> [Nombre del Alumno 3] — Página de contacto y formulario HTML5</li>
+      </ul>
+      <p><strong>Fecha de Entrega:</strong> Convocatoria 1ª Evaluación</p>
+    </div>
+  </section>
+
+  <!-- PÁGINA 2: MAPA DEL SITIO Y REPARTO -->
+  <section>
+    <h2>1. Mapa del Sitio Web</h2>
+    <p>
+      El sitio web de <strong>Lúmen Studios</strong> se compone de <strong>5 páginas HTML</strong> completas, enlazadas recíprocamente mediante un menú superior común y un mapa de navegación en el pie de página:
+    </p>
+    <ul>
+      <li><strong><code>index.html</code> (Inicio):</strong> Presentación institucional, manifiesto cinematográfico, bloque de bienvenida <code>#hero</code>, pilares de la compañía en tres columnas, métricas del estudio (<code>#cifras-cine</code>) y lista ordenada con las etapas de producción cinematográfica.</li>
+      <li><strong><code>proyectos.html</code> (Filmografía):</strong> Catálogo de películas de ficción y documentales (<em>Ecos del Silencio</em>, <em>La Sombra del Farero</em>, <em>Raíces de Cristal</em>), fichas técnicas, palmarés de premios en festivales y listado de proyectos en preproducción.</li>
+      <li><strong><code>servicios.html</code> (Instalaciones y Tarifas):</strong> Detalle técnico de los platós insonorizados y suites de postproducción de color y audio; <strong>tabla con <code>rowspan</code> y <code>colspan</code></strong> detallando tarifas por jornada y paquetes integrales; y lista de definiciones con normativas de rodaje sostenible.</li>
+      <li><strong><code>equipo.html</code> (Equipo Humano y Valores):</strong> Perfiles del director creativo, productora ejecutiva y director de fotografía con retratos ilustrados y biografías; y código de buenas prácticas laborales en set.</li>
+      <li><strong><code>contacto.html</code> (Contacto y Formulario):</strong> Ubicación física de la sede, correos directos por departamento, y un <strong>formulario HTML5 integral</strong> para recepción de proyectos, reserva de instalaciones y envío de guiones.</li>
+    </ul>
+
+    <h2>2. Reparto de Tareas del Equipo</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Integrante</th>
+          <th>Rol / Área de Trabajo</th>
+          <th>Responsabilidades Concretas</th>
+          <th>Archivos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Persona A</strong></td>
+          <td>Estructura base, Inicio y CSS global</td>
+          <td>Diseño de la paleta de colores, tipografías, maquetación de cabecera y pie común, desarrollo de <code>index.html</code> y creación de la hoja de estilos unificada <code>css/estilos.css</code>.</td>
+          <td><code>index.html</code>, <code>css/estilos.css</code></td>
+        </tr>
+        <tr>
+          <td><strong>Persona B</strong></td>
+          <td>Páginas temáticas, tablas y listas</td>
+          <td>Redacción de sinopsis, fichas y fichas técnicas; maquetación de <code>proyectos.html</code>, <code>servicios.html</code> y <code>equipo.html</code>; diseño de la tabla con <code>rowspan</code> y <code>colspan</code>; e integración de listas semánticas.</td>
+          <td><code>proyectos.html</code>, <code>servicios.html</code>, <code>equipo.html</code></td>
+        </tr>
+        <tr>
+          <td><strong>Persona C</strong></td>
+          <td>Contacto y Formulario HTML5</td>
+          <td>Investigación autónoma de los formularios en MDN; maquetación de <code>contacto.html</code> con múltiples tipos de campos (<code>text</code>, <code>email</code>, <code>select</code>, <code>radio</code>, <code>checkbox</code>, <code>date</code>, <code>textarea</code>); y explicación formativa al resto del grupo.</td>
+          <td><code>contacto.html</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="salto-pagina"></div>
+
+  <!-- PÁGINA 3: DECISIONES DE DISEÑO Y EL FORMULARIO -->
+  <section>
+    <h2>3. Decisiones de Diseño y Aspecto Uniforme</h2>
+    <h3>3.1. Paleta de Colores</h3>
+    <p>
+      Para transmitir la estética de una productora de cine de autor, se seleccionó una combinación cromática contrastada:
+    </p>
+    <ul>
+      <li><strong>Negro Grafito (<code>#0f1015</code> / <code>#12131a</code>):</strong> Color de cabecera, pie y paneles principales que recuerda la oscuridad de una sala de proyección.</li>
+      <li><strong>Dorado Ámbar (<code>#e5a93b</code> / <code>#ffd700</code>):</strong> Color de acento para botones, enlaces activos, líneas de división y premios cinematográficos.</li>
+      <li><strong>Blanco Humo (<code>#f7f7f9</code>) y Blanco Nieve (<code>#ffffff</code>):</strong> Fondos de lectura para garantizar un contraste óptimo (cumpliendo pautas de accesibilidad WCAG).</li>
+    </ul>
+
+    <h3>3.2. Tipografías</h3>
+    <ul>
+      <li><strong>Encabezados:</strong> Familia Serif clásica (<em>Georgia</em>, <em>Times New Roman</em>, serif), que evoca la cartelería cinematográfica y el guion literario.</li>
+      <li><strong>Cuerpo de texto:</strong> Familia Sans-Serif limpia (<em>Segoe UI</em>, <em>Tahoma</em>, <em>Verdana</em>, sans-serif) para facilitar la lectura fluida en pantalla.</li>
+    </ul>
+
+    <h3>3.3. Maquetación con Modelo de Caja y Display</h3>
+    <p>
+      En riguroso cumplimiento de las instrucciones de la asignatura (<em>sin recurrir a Flexbox ni Grid</em>), la maquetación de columnas, tarjetas de películas y formularios se ha implementado mediante <strong><code>display: inline-block</code></strong>, vertical-align superior y cálculo exacto de anchos porcentuales (31%, 48%, 63%) con <strong><code>box-sizing: border-box</code></strong>.
+    </p>
+
+    <h2>4. El Formulario de Contacto (Persona C)</h2>
+    <h3>4.1. Justificación de los Campos</h3>
+    <p>
+      El formulario ubicado en <code>contacto.html</code> está diseñado para dar respuesta a las necesidades de contratación de una productora real:
+    </p>
+    <ul>
+      <li><strong>Datos personales (<code>type="text"</code>, <code>type="email"</code>, <code>type="tel"</code>):</strong> Registro del solicitante o productora con validaciones obligatorias nativas (<code>required</code>, <code>pattern</code>).</li>
+      <li><strong>Desplegable temático (<code>&lt;select&gt;</code> con <code>&lt;optgroup&gt;</code>):</strong> Clasifica la solicitud en tres categorías: <em>Infraestructura y Rodaje</em>, <em>Postproducción</em> o <em>Desarrollo y Coproducción</em>.</li>
+      <li><strong>Fecha de rodaje (<code>type="date"</code>):</strong> Permite programar la disponibilidad de los platós.</li>
+      <li><strong>Presupuesto (<code>type="radio"</code>):</strong> Tres opciones excluyentes (&lt; 5.000€, 5.000€-25.000€, &gt; 25.000€) para orientar el modelo de producción.</li>
+      <li><strong>Servicios complementarios (<code>type="checkbox"</code>):</strong> Selección múltiple de personal de apoyo técnico (eléctricos, sonidistas, camerinos).</li>
+      <li><strong>Memoria / Sinopsis (<code>&lt;textarea&gt;</code>):</strong> Explicación narrativa y técnica del proyecto.</li>
+      <li><strong>Aceptación legal (<code>checkbox</code> obligatorio):</strong> Garantía de confidencialidad y tratamiento de proyectos.</li>
+      <li><strong>Botones de control (<code>submit</code> y <code>reset</code>):</strong> Envío de datos y restablecimiento de campos.</li>
+    </ul>
+
+    <div class="caja-nota">
+      <strong>Aprendizaje de Persona C:</strong> <em>«La documentación de MDN Web Docs me permitió comprender que asociar cada <code>&lt;label for="..."&gt;</code> con el <code>id</code> correspondiente no solo es una buena práctica semántica, sino una exigencia fundamental de accesibilidad para lectores de pantalla. Asimismo, aprendí a estructurar formularios largos mediante <code>&lt;fieldset&gt;</code> y <code>&lt;legend&gt;</code>, y a utilizar validaciones nativas de HTML5 sin tener que recurrir a scripts externos.»</em>
+    </div>
+  </section>
+
+  <div class="salto-pagina"></div>
+
+  <!-- PÁGINA 4: DIARIO DEL PROCESO, FUENTES, IA Y AUTOEVALUACIÓN -->
+  <section>
+    <h2>5. Diario del Proceso (Hitos)</h2>
+    <ul>
+      <li><strong>Hito 1 (Propuesta):</strong> Elección consensuada de la productora de cine ("Lúmen Studios"), definición de las 5 páginas y formalización del reparto de responsabilidades. La propuesta fue aprobada por el profesor.</li>
+      <li><strong>Hito 2 (Esqueleto HTML):</strong> Creación de todas las páginas con su estructura semántica completa (<code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>article</code>, <code>aside</code>, <code>footer</code>) y enlaces relativos activos entre ellas, sin estilos todavía.</li>
+      <li><strong>Hito 3 (Contenido y Estilo):</strong> Incorporación de contenido real redactado por el grupo, diseño de la tabla con <code>rowspan</code> y <code>colspan</code>, creación de ilustraciones vectoriales SVG e implementación de la hoja de estilos común <code>css/estilos.css</code>.</li>
+      <li><strong>Hito 4 (Revisión y Entrega):</strong> Verificación de que todas las imágenes contienen atributo <code>alt</code>, validación de la sintaxis con el validador W3C (0 errores) y redacción del PDF de memoria técnica.</li>
+    </ul>
+
+    <h2>6. Fuentes Consultadas y Declaración de Uso de IA</h2>
+    <h3>6.1. Fuentes y Documentación</h3>
+    <ul>
+      <li><strong>MDN Web Docs:</strong> <em>Mi primer formulario HTML</em>, <em>Estructura de formularios</em> y <em>Tablas HTML avanzadas</em>.</li>
+      <li><strong>Consorcio W3C:</strong> Estándar de especificación de HTML5 y Validador oficial de sintaxis.</li>
+      <li><strong>Imágenes:</strong> Todas las imágenes del directorio <code>img/</code> son gráficos vectoriales SVG originales creados ex profeso para este proyecto, libres de derechos y con funcionamiento 100% autónomo offline.</li>
+    </ul>
+
+    <h3>6.2. Declaración de Uso de Inteligencia Artificial (Apéndice)</h3>
+    <p>
+      En cumplimiento del apartado "Uso de IA" especificado en las directrices del proyecto:
+    </p>
+    <ul>
+      <li><strong>Plataforma empleada:</strong> Asistente de IA (DeepMind / Antigravity).</li>
+      <li><strong>Consultas realizadas:</strong> Asesoramiento en la estructuración de la maqueta basada estrictamente en el modelo de caja tradicional (sin Flexbox/Grid), soporte en la generación de gráficos vectoriales SVG cinematográficos libres de derechos, y validación cruzada de etiquetas semánticas.</li>
+      <li><strong>Aprovechamiento e integración:</strong> La IA se utilizó como asistente técnico y pedagógico. La redacción de los contenidos temáticos, el diseño de la estructura del sitio y la integración de las páginas fueron asumidos y supervisados directamente por el grupo de alumnos, garantizando la comprensión total de cada línea de código para la defensa presencial.</li>
+    </ul>
+
+    <h2>7. Autoevaluación del Equipo</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Aspecto Evaluado</th>
+          <th>Valoración del Grupo</th>
+          <th>Propuestas Futuras de Mejora</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Coherencia visual y diseño</strong></td>
+          <td>Sobresaliente. La identidad visual de cine independiente y la paleta de colores dotan a la web de un acabado uniforme y profesional.</td>
+          <td>Añadir animaciones sutiles en CSS cuando se aborden en clase en evaluaciones posteriores.</td>
+        </tr>
+        <tr>
+          <td><strong>Rigor técnico HTML y CSS</strong></td>
+          <td>Sobresaliente. Se cumplen todos los requisitos: semántica estricta, tabla con rowspan/colspan, listas, formulario con 8 tipos de controles y sin flexbox/grid.</td>
+          <td>Hacer la web completamente adaptativa a pantallas móviles pequeñas con CSS avanzado.</td>
+        </tr>
+        <tr>
+          <td><strong>Trabajo en equipo y reparto</strong></td>
+          <td>Muy positivo. Cada miembro ha asumido su parcela con autonomía, cumpliendo los plazos fijados en cada hito y resolviendo dudas conjuntamente.</td>
+          <td>Planificar con mayor antelación las pruebas en diferentes navegadores para ganar agilidad.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</body>
+</html>

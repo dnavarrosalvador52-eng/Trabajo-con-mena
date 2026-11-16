@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="50%" stop-color="#141420"/>
+      <stop offset="100%" stop-color="#1a1429"/>
+    </linearGradient>
+    <linearGradient id="goldBeam" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.35"/>
+      <stop offset="70%" stop-color="#e5a93b" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3a3a44"/>
+      <stop offset="50%" stop-color="#22222a"/>
+      <stop offset="100%" stop-color="#15151b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo cinematográfico -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+
+  <!-- Cinta de celuloide decorativa de fondo -->
+  <g opacity="0.15">
+    <path d="M-50,80 Q200,10 450,120 T900,40" fill="none" stroke="#e5a93b" stroke-width="50" stroke-dasharray="8 6"/>
+  </g>
+
+  <!-- Haz de luz del proyector / foco -->
+  <polygon points="260,190 780,20 780,410" fill="url(#goldBeam)"/>
+
+  <!-- Foco de estudio superior -->
+  <g transform="translate(680, 50)">
+    <rect x="-20" y="0" width="40" height="25" fill="#333" rx="3"/>
+    <path d="M-35,25 L35,25 L45,45 L-45,45 Z" fill="#222" stroke="#e5a93b" stroke-width="1.5"/>
+    <polygon points="-40,45 40,45 80,350 -120,350" fill="#ffd700" opacity="0.08"/>
+  </g>
+
+  <!-- Cámara de Cine Profesional -->
+  <g transform="translate(180, 150)">
+    <!-- Bobinas de película superiores -->
+    <circle cx="20" cy="-30" r="38" fill="url(#metalGrad)" stroke="#e5a93b" stroke-width="2.5"/>
+    <circle cx="20" cy="-30" r="14" fill="#111" stroke="#e5a93b" stroke-width="1.5"/>
+    <circle cx="65" cy="-30" r="38" fill="url(#metalGrad)" stroke="#e5a93b" stroke-width="2.5"/>
+    <circle cx="65" cy="-30" r="14" fill="#111" stroke="#e5a93b" stroke-width="1.5"/>
+
+    <!-- Cuerpo de la cámara -->
+    <rect x="-10" y="10" width="110" height="85" rx="8" fill="url(#metalGrad)" stroke="#444" stroke-width="2"/>
+    
+    <!-- Detalles del cuerpo: display lateral y controles -->
+    <rect x="5" y="25" width="45" height="35" rx="3" fill="#0d1117" stroke="#e5a93b" stroke-width="1"/>
+    <text x="12" y="47" font-family="monospace" font-size="11" fill="#00ffcc">REC 4K</text>
+    <circle cx="70" cy="30" r="6" fill="#cc0000"/>
+    <circle cx="70" cy="50" r="5" fill="#666"/>
+    <circle cx="70" cy="68" r="5" fill="#666"/>
+
+    <!-- Parasol y Objetivo Matte Box -->
+    <polygon points="100,25 155,10 155,95 100,80" fill="#1a1a20" stroke="#e5a93b" stroke-width="2"/>
+    <ellipse cx="155" cy="52.5" rx="6" ry="42" fill="#ffd700" opacity="0.8"/>
+    <ellipse cx="156" cy="52.5" rx="3" ry="38" fill="#00ffff" opacity="0.6"/>
+
+    <!-- Visor -->
+    <rect x="-30" y="20" width="22" height="15" rx="2" fill="#222" stroke="#555"/>
+    <polygon points="-30,17 -45,12 -45,38 -30,33" fill="#111"/>
+
+    <!-- Base y cabezal de trípode -->
+    <rect x="25" y="95" width="40" height="20" rx="3" fill="#2a2a30"/>
+    
+    <!-- Patas del Trípode -->
+    <line x1="30" y1="115" x2="-60" y2="280" stroke="#3a3a40" stroke-width="8" stroke-linecap="round"/>
+    <line x1="30" y1="115" x2="-60" y2="280" stroke="#e5a93b" stroke-width="2" stroke-linecap="round"/>
+
+    <line x1="45" y1="115" x2="45" y2="280" stroke="#3a3a40" stroke-width="8" stroke-linecap="round"/>
+    <line x1="45" y1="115" x2="45" y2="280" stroke="#e5a93b" stroke-width="2" stroke-linecap="round"/>
+
+    <line x1="60" y1="115" x2="150" y2="280" stroke="#3a3a40" stroke-width="8" stroke-linecap="round"/>
+    <line x1="60" y1="115" x2="150" y2="280" stroke="#e5a93b" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Tipografía artística en el plano derecho -->
+  <g transform="translate(420, 190)">
+    <text x="0" y="30" font-family="'Georgia', serif" font-size="34" font-weight="bold" fill="#ffffff" letter-spacing="2">
+      HISTORIAS QUE TRASCIENDEN
+    </text>
+    <text x="0" y="65" font-family="'Georgia', serif" font-size="20" font-style="italic" fill="#e5a93b" letter-spacing="1">
+      Producción, Rodaje &amp; Creación Audiovisual
+    </text>
+    <rect x="0" y="85" width="120" height="3" fill="#e5a93b"/>
+  </g>
+</svg>

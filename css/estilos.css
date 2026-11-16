@@ -1,0 +1,810 @@
+/* ==========================================================================
+   HOJA DE ESTILOS COMÚN - LÚMEN PRODUCCIONES CINEMATOGRÁFICAS
+   Proyecto Final 1ª Evaluación - Lenguajes de Marcas
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. RESET BÁSICO Y VARIABLES DE FUENTE / MODELO DE CAJA
+   -------------------------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2b2b2b;
+  background-color: #f7f7f9;
+}
+
+/* --------------------------------------------------------------------------
+   2. SELECTORES DE ETIQUETA GLOBALES
+   -------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: #111111;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid #e5a93b;
+  padding-bottom: 0.4rem;
+  margin-top: 1rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: #1a1a24;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #3f3f46;
+}
+
+a {
+  color: #b8860b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #8b6508;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul, ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: #333333;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  background-color: #ffffff;
+  border-left: 5px solid #e5a93b;
+  font-style: italic;
+  color: #4a4a4a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #e2e8f0;
+  margin: 2rem 0;
+}
+
+/* --------------------------------------------------------------------------
+   3. ESTRUCTURA Y CONTENEDOR GENERAL (DISPLAY Y MODELO DE CAJA)
+   -------------------------------------------------------------------------- */
+.contenedor {
+  width: 92%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+main {
+  display: block;
+  padding: 2.5rem 0;
+}
+
+.seccion {
+  display: block;
+  margin-bottom: 3rem;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* --------------------------------------------------------------------------
+   4. ENCABEZADO (HEADER) Y NAVEGACIÓN (NAV)
+   -------------------------------------------------------------------------- */
+header {
+  display: block;
+  background-color: #0f1015;
+  color: #ffffff;
+  border-bottom: 3px solid #e5a93b;
+  padding: 1rem 0;
+}
+
+.cabecera-contenido {
+  display: block;
+  text-align: center;
+}
+
+.logo-enlace {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  margin: 0 auto;
+}
+
+nav {
+  display: block;
+  margin-top: 1rem;
+}
+
+.menu-navegacion {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu-navegacion li {
+  display: inline-block;
+  margin: 0 0.35rem;
+}
+
+.menu-navegacion a {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  color: #e2e8f0;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.menu-navegacion a:hover {
+  background-color: #24252e;
+  color: #ffd700;
+  border-color: #e5a93b;
+  text-decoration: none;
+}
+
+.menu-navegacion a.activo {
+  background-color: #e5a93b;
+  color: #0f1015;
+  font-weight: 700;
+  border-color: #ffd700;
+}
+
+/* --------------------------------------------------------------------------
+   5. SECCIÓN HERO (INICIO) CON SELECTOR DE ID
+   -------------------------------------------------------------------------- */
+#hero {
+  display: block;
+  background-color: #12131a;
+  color: #ffffff;
+  padding: 3rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2.5rem;
+  border: 1px solid #2a2c38;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+#hero h1 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+#hero .subtitulo {
+  color: #e5a93b;
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+#hero .hero-imagen {
+  display: block;
+  max-width: 760px;
+  margin: 1.5rem auto 2rem auto;
+  border-radius: 6px;
+  border: 2px solid #333644;
+}
+
+#hero p.hero-descripcion {
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  color: #d1d5db;
+  font-size: 1.05rem;
+}
+
+/* Botones con selectores de clase */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.btn-primario {
+  background-color: #e5a93b;
+  color: #0f1015;
+  border-color: #ffd700;
+}
+
+.btn-primario:hover {
+  background-color: #ffd700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.btn-secundario {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #e5a93b;
+  margin-left: 0.5rem;
+}
+
+.btn-secundario:hover {
+  background-color: #24252e;
+  color: #ffd700;
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------
+   6. TARJETAS Y COLUMNAS CON MODELO DE CAJA Y DISPLAY INLINE-BLOCK
+   -------------------------------------------------------------------------- */
+.fila-columnas {
+  display: block;
+  text-align: center;
+  margin: 0 -10px;
+}
+
+.columna-3 {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  margin: 10px 1%;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.columna-2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  margin: 10px 1%;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.card {
+  display: block;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.card:hover {
+  border-color: #e5a93b;
+  box-shadow: 0 6px 14px rgba(229, 169, 59, 0.15);
+}
+
+.card img {
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   7. BLOQUE DESTACADO DE CIFRAS / ASIDE CON ID
+   -------------------------------------------------------------------------- */
+#cifras-cine {
+  display: block;
+  background-color: #171821;
+  color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2.5rem 0;
+  text-align: center;
+  border-left: 6px solid #e5a93b;
+}
+
+#cifras-cine h2 {
+  color: #ffd700;
+  border-bottom: none;
+  margin-bottom: 1.5rem;
+}
+
+.cifra-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 23%;
+  margin: 0 0.8%;
+  padding: 1rem 0.5rem;
+  background-color: #212330;
+  border-radius: 6px;
+  border: 1px solid #333644;
+}
+
+.cifra-numero {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #e5a93b;
+  font-family: 'Georgia', serif;
+}
+
+.cifra-texto {
+  display: block;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* --------------------------------------------------------------------------
+   8. PÁGINA DE PROYECTOS / FILMOGRAFÍA
+   -------------------------------------------------------------------------- */
+.proyecto-articulo {
+  display: block;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.8rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.proyecto-poster {
+  display: inline-block;
+  vertical-align: top;
+  width: 28%;
+  margin-right: 3%;
+}
+
+.proyecto-info {
+  display: inline-block;
+  vertical-align: top;
+  width: 68%;
+}
+
+.etiqueta-genero {
+  display: inline-block;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.datos-tecnicos {
+  list-style: none;
+  margin: 0 0 1rem 0;
+  padding: 0.75rem;
+  background-color: #f8fafc;
+  border-left: 3px solid #e5a93b;
+  border-radius: 0 4px 4px 0;
+}
+
+.datos-tecnicos li {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.datos-tecnicos strong {
+  color: #0f172a;
+}
+
+.lista-premios {
+  list-style-type: square;
+  color: #b45309;
+}
+
+.lista-ordenada {
+  list-style-type: decimal;
+}
+
+/* --------------------------------------------------------------------------
+   9. PÁGINA DE SERVICIOS Y TABLA DE TARIFAS (ROWSPAN / COLSPAN)
+   -------------------------------------------------------------------------- */
+.descripcion-servicio {
+  display: block;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+figure {
+  display: block;
+  margin: 1.5rem 0;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+figcaption {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+/* Estilos de la Tabla con selector de ID y de etiqueta */
+#tabla-tarifas {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+#tabla-tarifas th,
+#tabla-tarifas td {
+  padding: 0.85rem 1rem;
+  border: 1px solid #cbd5e1;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+#tabla-tarifas thead th {
+  background-color: #0f1015;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  border-color: #24252e;
+}
+
+#tabla-tarifas thead tr:first-child th {
+  background-color: #171821;
+  color: #ffd700;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+}
+
+#tabla-tarifas tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+#tabla-tarifas tbody tr:hover {
+  background-color: #fef9c3;
+}
+
+#tabla-tarifas .categoria-servicio {
+  background-color: #2d3748;
+  color: #ffffff;
+  font-weight: 600;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#tabla-tarifas .precio {
+  font-weight: 700;
+  color: #b45309;
+  text-align: right;
+  white-space: nowrap;
+}
+
+#tabla-tarifas tfoot td {
+  background-color: #f1f5f9;
+  font-size: 0.85rem;
+  color: #475569;
+  font-style: italic;
+  border-top: 2px solid #cbd5e1;
+}
+
+/* --------------------------------------------------------------------------
+   10. PÁGINA DE EQUIPO
+   -------------------------------------------------------------------------- */
+.miembro-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  margin: 10px 1%;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.miembro-avatar {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem auto;
+  border-radius: 50%;
+  border: 3px solid #e5a93b;
+}
+
+.miembro-cargo {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #b45309;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+}
+
+/* --------------------------------------------------------------------------
+   11. FORMULARIO DE CONTACTO (CONTACTO.HTML)
+   -------------------------------------------------------------------------- */
+#formulario-contacto {
+  display: block;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-top: 1.5rem;
+}
+
+fieldset {
+  display: block;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 1.8rem;
+  background-color: #fafafa;
+}
+
+legend {
+  font-family: 'Georgia', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f1015;
+  padding: 0 0.6rem;
+  border-bottom: 2px solid #e5a93b;
+}
+
+.campo-formulario {
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.etiqueta-inline {
+  display: inline;
+  font-weight: normal;
+  margin-left: 0.4rem;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: #1e293b;
+  background-color: #ffffff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #e5a93b;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(229, 169, 59, 0.25);
+}
+
+.opciones-grupo {
+  display: block;
+  padding: 0.4rem 0;
+}
+
+.opcion-item {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.opcion-item input[type="radio"],
+.opcion-item input[type="checkbox"] {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.botones-formulario {
+  display: block;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.btn-enviar {
+  background-color: #e5a93b;
+  color: #0f1015;
+  border: none;
+  padding: 0.75rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.75rem;
+}
+
+.btn-enviar:hover {
+  background-color: #ffd700;
+}
+
+.btn-reset {
+  background-color: #e2e8f0;
+  color: #334155;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-reset:hover {
+  background-color: #cbd5e1;
+}
+
+.contacto-grid {
+  display: block;
+}
+
+.contacto-info {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+  margin-right: 3%;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.contacto-form-col {
+  display: inline-block;
+  vertical-align: top;
+  width: 63%;
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------------------------------
+   12. PIE DE PÁGINA (FOOTER)
+   -------------------------------------------------------------------------- */
+footer {
+  display: block;
+  background-color: #0f1015;
+  color: #94a3b8;
+  padding: 2.5rem 0 1.5rem 0;
+  border-top: 3px solid #e5a93b;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.footer-columnas {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.footer-col {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  margin: 0 1%;
+  box-sizing: border-box;
+}
+
+.footer-col h4 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #333644;
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.45rem;
+}
+
+.footer-col a {
+  color: #cbd5e1;
+}
+
+.footer-col a:hover {
+  color: #ffd700;
+}
+
+.footer-copyright {
+  display: block;
+  border-top: 1px solid #24252e;
+  padding-top: 1.25rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* --------------------------------------------------------------------------
+   13. ESTILOS DE ADAPTABILIDAD BÁSICA (SIN COMPLICAR CON FLEXBOX NI GRID)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .columna-3,
+  .columna-2,
+  .cifra-item,
+  .proyecto-poster,
+  .proyecto-info,
+  .miembro-card,
+  .contacto-info,
+  .contacto-form-col,
+  .footer-col {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .menu-navegacion li {
+    display: block;
+    margin: 4px 0;
+  }
+}

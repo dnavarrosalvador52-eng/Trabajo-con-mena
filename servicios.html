@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Servicios de producción audiovisual, alquiler de platós cinematográficos, cámaras de cine y salas de postproducción en Lúmen Studios.">
+  <meta name="keywords" content="platós cine, tarifas rodaje, alquiler cámaras cine, postproducción sonido dolby, etalonaje davinci">
+  <title>Servicios Técnicos y Tarifas | Lúmen Studios</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Cabecera principal y navegación común -->
+  <header>
+    <div class="contenedor">
+      <div class="cabecera-contenido">
+        <a href="index.html" class="logo-enlace">
+          <img src="img/logo.svg" alt="Logotipo oficial de Lúmen Studios Cinematográficos" class="logo-img">
+        </a>
+      </div>
+      <nav aria-label="Navegación principal">
+        <ul class="menu-navegacion">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="servicios.html" class="activo">Servicios y Tarifas</a></li>
+          <li><a href="equipo.html">Nuestro Equipo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="contenedor">
+
+    <section class="seccion">
+      <h1>Infraestructura Cinematográfica y Servicios</h1>
+      <p>
+        En <strong>Lúmen Studios</strong> abrimos nuestras instalaciones y equipos técnicos de rodaje tanto 
+        a proyectos de producción propia como a productoras externas, directores independientes y agencias 
+        publicitarias que precisen de los más altos estándares de calidad del sector cinematográfico.
+      </p>
+    </section>
+
+    <!-- Fila con 2 columnas: Platós y Postproducción con imágenes semánticas en figure -->
+    <section class="seccion">
+      <h2>Instalaciones Técnicas Homologadas</h2>
+      <div class="fila-columnas">
+
+        <article class="columna-2">
+          <div class="card">
+            <h3>Platós de Rodaje Insonorizados</h3>
+            <p>
+              Disponemos de dos platós climatizados con aislamiento acústico integral (NC-20) e insonorización 
+              homologada para captura de sonido directo con calidad de referencia.
+            </p>
+            <figure>
+              <img src="img/plato.svg" alt="Ilustración esquemática del Plató 1 con ciclorama croma verde e iluminación">
+              <figcaption>Plató Principal 1 con ciclorama curvo sinfín y pasarela cenital de iluminación motorizada.</figcaption>
+            </figure>
+            <ul>
+              <li>Superficie útil de 520 m² en Plató 1 y 280 m² en Plató 2.</li>
+              <li>Altura libre de 8,5 metros bajo pasarela de focos.</li>
+              <li>Potencia eléctrica instalada de 180 kW con generador de emergencia redundante.</li>
+              <li>Acceso para vehículos pesados y descarga directa de material de atrezo.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="columna-2">
+          <div class="card">
+            <h3>Salas de Postproducción y Audio</h3>
+            <p>
+              Nuestras salas de corrección de color y mezcla sonora están calibradas bajo normas internacionales 
+              SMPTE para asegurar la máxima fidelidad cromática y acústica.
+            </p>
+            <figure>
+              <img src="img/postproduccion.svg" alt="Sala de etalonaje y montaje de vídeo con monitores de color y consola de mezclas">
+              <figcaption>Suite de etalonaje digital con monitores Sony BVM y consola de corrección DaVinci Advanced.</figcaption>
+            </figure>
+            <ul>
+              <li>Proyector 4K DCI con calibración espectral para máster de exhibición.</li>
+              <li>Monitores OLED de etalonaje con rango dinámico HDR de 1000 nits.</li>
+              <li>Sala acústica certificada Dolby Atmos Home & Theatrical (9.1.4).</li>
+              <li>Almacenamiento centralizado SAN con enlace de fibra óptica a 100 Gbps.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TABLA EXIGIDA EN EL PDF CON ROWSPAN Y COLSPAN -->
+    <section class="seccion">
+      <h2>Tarifas Oficiales de Alquiler y Servicios Técnicos</h2>
+      <p>
+        Consulte a continuación el desglose de tarifas vigentes para la temporada 2026. Todos los paquetes 
+        pueden contratarse de forma individual o modular en función de las necesidades de su rodaje.
+      </p>
+
+      <table id="tabla-tarifas">
+        <thead>
+          <!-- Fila con colspan que agrupa todo el ancho -->
+          <tr>
+            <th colspan="4">CUADRO DE TARIFAS Y PAQUETES DE PRODUCCIÓN CINEMATOGRÁFICA (2026)</th>
+          </tr>
+          <tr>
+            <th>Área / Departamento</th>
+            <th>Concepto de Servicio</th>
+            <th>Equipamiento y Personal Incluido</th>
+            <th>Tarifa Jornada (8h)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Bloque Platós usando rowspan="2" -->
+          <tr>
+            <td rowspan="2" class="categoria-servicio">Platós de Rodaje</td>
+            <td><strong>Plató 1 — Ciclorama Sinfín</strong></td>
+            <td>520 m², ciclorama verde/blanco, potencia eléctrica 180 kW, camerinos y sala de producción</td>
+            <td class="precio">1.450 € / día</td>
+          </tr>
+          <tr>
+            <td><strong>Plató 2 — Espacio Polivalente</strong></td>
+            <td>280 m², fondo negro mate absorción acústica, 90 kW de luz regulable DMX</td>
+            <td class="precio">890 € / día</td>
+          </tr>
+
+          <!-- Bloque Cámaras y Ópticas usando rowspan="2" -->
+          <tr>
+            <td rowspan="2" class="categoria-servicio">Cámaras y Ópticas</td>
+            <td><strong>Paquete Cámara 8K Gran Formato</strong></td>
+            <td>Cuerpo de cámara cinematográfica, 5 baterías V-Mount, tarjetas de alta velocidad y trípode pesado</td>
+            <td class="precio">650 € / día</td>
+          </tr>
+          <tr>
+            <td><strong>Juego de Lentes Anamórficas</strong></td>
+            <td>Set de 4 ópticas fijas (35mm, 50mm, 75mm, 100mm) con montura PL y filtro polarizador cine</td>
+            <td class="precio">420 € / día</td>
+          </tr>
+
+          <!-- Bloque Postproducción usando rowspan="3" -->
+          <tr>
+            <td rowspan="3" class="categoria-servicio">Postproducción y Sonido</td>
+            <td><strong>Sala de Montaje Offline</strong></td>
+            <td>Estación Mac Studio Ultra, software de edición homologado y monitor calibrado 32"</td>
+            <td class="precio">320 € / día</td>
+          </tr>
+          <tr>
+            <td><strong>Suite de Etalonaje de Color</strong></td>
+            <td>Monitor de masterización 4K HDR, superficie de control y colorista certificado</td>
+            <td class="precio">750 € / día</td>
+          </tr>
+          <tr>
+            <td><strong>Mezcla Sonora Dolby Atmos</strong></td>
+            <td>Sala acústica tratada 9.1.4, microfonía de Foley y técnico de sonido directo</td>
+            <td class="precio">680 € / día</td>
+          </tr>
+
+          <!-- Paquete Completo con colspan="2" en la descripción -->
+          <tr>
+            <td class="categoria-servicio">Paquete Integral</td>
+            <td colspan="2"><strong>«Todo en Uno Lúmen»:</strong> 5 jornadas de Plató 1 + Paquete Cámara 8K + 3 jornadas de Suite de Color con técnicos incluidos</td>
+            <td class="precio">9.200 € / pack</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <!-- Fila de pie de tabla con colspan="4" -->
+          <tr>
+            <td colspan="4">
+              <strong>Notas y condiciones:</strong> Tarifas expresadas sin IVA (21%). Las reservas de fin de semana conllevan un recargo del 15%. Descuentos especiales del 10% para proyectos de escuelas de cine y producciones de cortometrajes independientes. Seguro de material incluido para uso en instalaciones propias.
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <p>
+        Para presupuestos personalizados o contratación de semanas completas de rodaje, 
+        <a href="contacto.html">solicite presupuesto a nuestro equipo de producción &rarr;</a>
+      </p>
+    </section>
+
+    <!-- Lista descriptiva con DL sobre normativas de seguridad en set -->
+    <section class="seccion">
+      <h2>Protocolos y Normativas de Rodaje</h2>
+      <dl>
+        <dt><strong>Seguridad Eléctrica y Prevención:</strong></dt>
+        <dd>Todas nuestras líneas de alimentación disponen de interruptores diferenciales superinmunizados y personal técnico de guardia durante todo el horario de rodaje.</dd>
+        
+        <dt><strong>Control Acústico y Confort:</strong></dt>
+        <dd>Sistema de climatización silenciosa por conductos textiles que permite mantener encendida la ventilación sin generar ruido apreciable durante la grabación sonora.</dd>
+        
+        <dt><strong>Gestión Sostenible (Green Shooting):</strong></dt>
+        <dd>Aplicamos el protocolo de producción ecológica: luminarias LED de bajo consumo, separación de residuos de escenografía y eliminación de plásticos de un solo uso en el catering.</dd>
+      </dl>
+    </section>
+
+  </main>
+
+  <!-- Pie de página común -->
+  <footer>
+    <div class="contenedor">
+      <div class="footer-columnas">
+        
+        <div class="footer-col">
+          <h4>Lúmen Studios</h4>
+          <p>
+            Entidad cinematográfica independiente comprometida con la creación de autor, la innovación audiovisual y el talento emergente.
+          </p>
+          <address>
+            <p>Avenida del Celuloide, 24, Edificio Fénix<br>
+            28045 Madrid, España</p>
+          </address>
+        </div>
+
+        <div class="footer-col">
+          <h4>Mapa del Sitio</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="proyectos.html">Filmografía y Proyectos</a></li>
+            <li><a href="servicios.html">Servicios y Tarifas Técnicas</a></li>
+            <li><a href="equipo.html">Equipo Profesional</a></li>
+            <li><a href="contacto.html">Contacto y Presupuestos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Información y Horarios</h4>
+          <ul>
+            <li><strong>Teléfono:</strong> +34 912 345 678</li>
+            <li><strong>Email:</strong> produccion@lumenstudios.es</li>
+            <li><strong>Oficinas:</strong> Lunes a Viernes: 08:30 - 19:30</li>
+            <li><strong>Platós de rodaje:</strong> Disponibilidad 24/7 con reserva previa</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-copyright">
+        <p>&copy; 2026 Lúmen Studios Cinematográficos S.L. — Todos los derechos reservados. Proyecto educativo para el módulo de Lenguajes de Marcas.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

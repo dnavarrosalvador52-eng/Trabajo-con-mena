@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="dirGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c3e50"/>
+      <stop offset="100%" stop-color="#1a252f"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#dirGrad)" stroke="#e5a93b" stroke-width="4"/>
+  
+  <!-- Cabeza y gorra estilo director -->
+  <circle cx="100" cy="85" r="32" fill="#ffe0b2"/>
+  <!-- Gorra plana de director -->
+  <ellipse cx="100" cy="65" rx="36" ry="12" fill="#111111"/>
+  <path d="M70,68 Q100,55 130,68" stroke="#e5a93b" stroke-width="2" fill="none"/>
+  <!-- Visera -->
+  <path d="M125,68 Q145,72 150,78 Q130,76 122,72 Z" fill="#111111"/>
+
+  <!-- Barba / Gafas de pasta de cineasta -->
+  <circle cx="90" cy="82" r="10" fill="none" stroke="#222" stroke-width="3"/>
+  <circle cx="112" cy="82" r="10" fill="none" stroke="#222" stroke-width="3"/>
+  <line x1="100" y1="82" x2="102" y2="82" stroke="#222" stroke-width="3"/>
+  <path d="M82,98 Q100,118 118,98" fill="#4e342e" opacity="0.8"/>
+
+  <!-- Cuerpo / Bufanda / Chaleco -->
+  <path d="M50,175 C50,130 75,120 100,120 C125,120 150,130 150,175 Z" fill="#37474f"/>
+  <!-- Bufanda roja artística -->
+  <path d="M82,122 Q100,135 118,122 L115,155 L85,155 Z" fill="#b71c1c"/>
+</svg>

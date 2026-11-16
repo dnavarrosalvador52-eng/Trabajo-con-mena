@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacte con Lúmen Studios para solicitud de presupuestos de rodaje, reserva de platós cinematográficos, envío de guiones o convocatorias de casting.">
+  <meta name="keywords" content="contacto productora cine, formulario presupuesto rodaje, casting cine, alquiler estudio cine">
+  <title>Contacto y Presupuestos | Lúmen Studios</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Cabecera principal y navegación común -->
+  <header>
+    <div class="contenedor">
+      <div class="cabecera-contenido">
+        <a href="index.html" class="logo-enlace">
+          <img src="img/logo.svg" alt="Logotipo oficial de Lúmen Studios Cinematográficos" class="logo-img">
+        </a>
+      </div>
+      <nav aria-label="Navegación principal">
+        <ul class="menu-navegacion">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="servicios.html">Servicios y Tarifas</a></li>
+          <li><a href="equipo.html">Nuestro Equipo</a></li>
+          <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="contenedor">
+
+    <section class="seccion">
+      <h1>Contacto y Solicitud de Producción</h1>
+      <p>
+        ¿Tiene un guion en busca de productora, necesita reservar nuestros platós de rodaje o desea solicitar un 
+        presupuesto a medida para la postproducción de su película? Complete el siguiente formulario técnico y 
+        nuestro equipo de producción ejecutiva le responderá en un plazo máximo de 48 horas laborables.
+      </p>
+    </section>
+
+    <!-- Disposición de 2 columnas con modelo de caja y display inline-block -->
+    <div class="contacto-grid">
+
+      <!-- Columna 1: Información de contacto directo (aside) -->
+      <aside class="contacto-info">
+        <h2>Sede Central</h2>
+        <address>
+          <p>
+            <strong>Lúmen Studios Cinematográficos S.L.</strong><br>
+            Avenida del Celuloide, 24, Edificio Fénix<br>
+            Polígono Audiovisual de Madrid<br>
+            28045 Madrid (España)
+          </p>
+        </address>
+
+        <hr>
+
+        <h3>Vías de Comunicación Directa</h3>
+        <ul>
+          <li><strong>Teléfono General:</strong> <a href="tel:+34912345678">+34 912 345 678</a></li>
+          <li><strong>Oficina de Producción:</strong> <a href="mailto:produccion@lumenstudios.es">produccion@lumenstudios.es</a></li>
+          <li><strong>Dossiers y Guiones:</strong> <a href="mailto:guiones@lumenstudios.es">guiones@lumenstudios.es</a></li>
+          <li><strong>Casting y Talento:</strong> <a href="mailto:casting@lumenstudios.es">casting@lumenstudios.es</a></li>
+        </ul>
+
+        <hr>
+
+        <h3>Horario de Atención Presencial</h3>
+        <ul>
+          <li><strong>Lunes a Jueves:</strong> 08:30 a 19:30 h</li>
+          <li><strong>Viernes:</strong> 08:30 a 15:00 h</li>
+          <li><strong>Sábados y Domingos:</strong> Cerrado (salvo jornadas de rodaje en plató concertadas)</li>
+        </ul>
+
+        <p><em>* Imprescindible concertar cita previa para acceso a los platós durante jornadas de rodaje en activo.</em></p>
+      </aside>
+
+      <!-- Columna 2: Formulario Completo HTML5 con selector de ID -->
+      <section class="contacto-form-col">
+        <h2>Formulario de Solicitud de Proyecto</h2>
+        
+        <form id="formulario-contacto" action="#" method="post">
+
+          <!-- Fieldset 1: Datos de identificación -->
+          <fieldset>
+            <legend>1. Datos del Solicitante o Productora</legend>
+            
+            <div class="campo-formulario">
+              <label for="campo-nombre">Nombre y Apellidos / Razón Social: *</label>
+              <input type="text" id="campo-nombre" name="nombre" placeholder="Ej. Carlos Martínez de la Hoz" required minlength="3">
+            </div>
+
+            <div class="campo-formulario">
+              <label for="campo-email">Correo Electrónico de Contacto: *</label>
+              <input type="email" id="campo-email" name="email" placeholder="ejemplo@productora.com" required>
+            </div>
+
+            <div class="campo-formulario">
+              <label for="campo-telefono">Teléfono de Contacto:</label>
+              <input type="tel" id="campo-telefono" name="telefono" placeholder="+34 600 000 000" pattern="[0-9+ ]{9,15}">
+            </div>
+          </fieldset>
+
+          <!-- Fieldset 2: Tipo de Solicitud y Fechas -->
+          <fieldset>
+            <legend>2. Detalles del Proyecto y Servicios Requeridos</legend>
+
+            <div class="campo-formulario">
+              <label for="campo-tipo-proyecto">Motivo Principal de la Solicitud: *</label>
+              <select id="campo-tipo-proyecto" name="tipo_proyecto" required>
+                <option value="">-- Seleccione una opción --</option>
+                <optgroup label="Infraestructura y Rodaje">
+                  <option value="plato1">Alquiler de Plató 1 (Ciclorama 520 m²)</option>
+                  <option value="plato2">Alquiler de Plató 2 (Espacio Negro 280 m²)</option>
+                  <option value="camaras">Alquiler de Cámaras 8K y Ópticas Anamórficas</option>
+                </optgroup>
+                <optgroup label="Postproducción">
+                  <option value="color">Etalonaje y Corrección de Color 4K HDR</option>
+                  <option value="dolby">Mezcla y Diseño Sonoro Dolby Atmos</option>
+                  <option value="montaje">Montaje y Edición Offline</option>
+                </optgroup>
+                <optgroup label="Desarrollo y Coproducción">
+                  <option value="coproduccion">Propuesta de Coproducción de Largometraje</option>
+                  <option value="guion">Envío de Guion / Tratamiento Narrativo</option>
+                  <option value="casting">Inscripción en Bolsa de Casting / Técnicos</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="campo-formulario">
+              <label for="campo-fecha">Fecha Estimada de Inicio del Rodaje o Trabajo:</label>
+              <input type="date" id="campo-fecha" name="fecha_inicio">
+            </div>
+
+            <div class="campo-formulario">
+              <label>Presupuesto Estimado de Producción:</label>
+              <div class="opciones-grupo">
+                <div class="opcion-item">
+                  <input type="radio" id="pres-bajo" name="presupuesto" value="menos-5k" checked>
+                  <label for="pres-bajo" class="etiqueta-inline">Menos de 5.000 € (Cortometrajes independientes)</label>
+                </div>
+                <div class="opcion-item">
+                  <input type="radio" id="pres-medio" name="presupuesto" value="5k-25k">
+                  <label for="pres-medio" class="etiqueta-inline">Entre 5.000 € y 25.000 € (Publicidad y mediometrajes)</label>
+                </div>
+                <div class="opcion-item">
+                  <input type="radio" id="pres-alto" name="presupuesto" value="mas-25k">
+                  <label for="pres-alto" class="etiqueta-inline">Más de 25.000 € (Largometrajes y series de TV)</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="campo-formulario">
+              <label>Servicios Adicionales Necesarios:</label>
+              <div class="opciones-grupo">
+                <div class="opcion-item">
+                  <input type="checkbox" id="srv-iluminacion" name="servicios_extra[]" value="iluminacion">
+                  <label for="srv-iluminacion" class="etiqueta-inline">Técnico electricista / Gaffer de guardia</label>
+                </div>
+                <div class="opcion-item">
+                  <input type="checkbox" id="srv-sonido" name="servicios_extra[]" value="sonido">
+                  <label for="srv-sonido" class="etiqueta-inline">Ingeniero de captura de sonido directo</label>
+                </div>
+                <div class="opcion-item">
+                  <input type="checkbox" id="srv-camerinos" name="servicios_extra[]" value="camerinos">
+                  <label for="srv-camerinos" class="etiqueta-inline">Sala de maquillaje y camerinos VIP</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="campo-formulario">
+              <label for="campo-mensaje">Sinopsis, Memoria Técnica o Descripción del Proyecto: *</label>
+              <textarea id="campo-mensaje" name="mensaje" rows="6" placeholder="Detalle las necesidades técnicas de su proyecto, número estimado de jornadas de rodaje o resumen del guion..." required></textarea>
+            </div>
+          </fieldset>
+
+          <!-- Fieldset 3: Consentimiento legal y botones -->
+          <fieldset>
+            <legend>3. Aceptación y Envío</legend>
+
+            <div class="campo-formulario">
+              <div class="opcion-item">
+                <input type="checkbox" id="campo-privacidad" name="privacidad" required>
+                <label for="campo-privacidad" class="etiqueta-inline">
+                  He leído y acepto la política de confidencialidad y tratamiento de proyectos de Lúmen Studios. *
+                </label>
+              </div>
+            </div>
+
+            <div class="botones-formulario">
+              <button type="submit" class="btn-enviar">Enviar Solicitud de Producción</button>
+              <button type="reset" class="btn-reset">Restablecer Formulario</button>
+            </div>
+          </fieldset>
+
+        </form>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- Pie de página común -->
+  <footer>
+    <div class="contenedor">
+      <div class="footer-columnas">
+        
+        <div class="footer-col">
+          <h4>Lúmen Studios</h4>
+          <p>
+            Entidad cinematográfica independiente comprometida con la creación de autor, la innovación audiovisual y el talento emergente.
+          </p>
+          <address>
+            <p>Avenida del Celuloide, 24, Edificio Fénix<br>
+            28045 Madrid, España</p>
+          </address>
+        </div>
+
+        <div class="footer-col">
+          <h4>Mapa del Sitio</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="proyectos.html">Filmografía y Proyectos</a></li>
+            <li><a href="servicios.html">Servicios y Tarifas Técnicas</a></li>
+            <li><a href="equipo.html">Equipo Profesional</a></li>
+            <li><a href="contacto.html">Contacto y Presupuestos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Información y Horarios</h4>
+          <ul>
+            <li><strong>Teléfono:</strong> +34 912 345 678</li>
+            <li><strong>Email:</strong> produccion@lumenstudios.es</li>
+            <li><strong>Oficinas:</strong> Lunes a Viernes: 08:30 - 19:30</li>
+            <li><strong>Platós de rodaje:</strong> Disponibilidad 24/7 con reserva previa</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-copyright">
+        <p>&copy; 2026 Lúmen Studios Cinematográficos S.L. — Todos los derechos reservados. Proyecto educativo para el módulo de Lenguajes de Marcas.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
